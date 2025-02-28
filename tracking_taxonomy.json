@@ -1,0 +1,2908 @@
+{
+    "questions":[
+        {
+            "id": "industry",
+            "question": "What is the client's industry?",
+            "options": ["SaaS", "eCommerce", "Marketplace", "Media"],
+            "affects": "events, event properties, user traits"
+          },
+          {
+            "id": "business_model",
+            "question": "What is the client's business model?",
+            "options": ["B2B", "B2C", "Hybrid"],
+            "affects": "events, event properties, user traits"
+          },
+          {
+            "id": "tracking_platforms",
+            "question": "Which tracking platforms will be used?",
+            "options": ["website", "mobile", "server", "rETL"],
+            "affects": "events"
+          }
+        ],
+    "events": [
+        {
+            "event_name": "Account Created",
+            "description": "Triggered when a user is added to the database through lead forms, sign up, etc",
+            "category": "Core",
+            "tracking_platforms": [
+                "Web"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "email",
+                    "definition": "input value for email",
+                    "type": "String"
+                },
+                {
+                    "name": "fbc",
+                    "definition": "Facebook click ID",
+                    "type": "String"
+                },
+                {
+                    "name": "fbp",
+                    "definition": "input value for first name",
+                    "type": "String"
+                },
+                {
+                    "name": "first_name",
+                    "definition": "Google click ID",
+                    "type": "String"
+                },
+                {
+                    "name": "gclid",
+                    "definition": "input value for last name",
+                    "type": ""
+                },
+                {
+                    "name": "last_name",
+                    "definition": "input value for full name",
+                    "type": ""
+                },
+                {
+                    "name": "name",
+                    "definition": "",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Account Created - Server",
+            "description": "Triggered when a user is added to the database through lead forms, sign up, etc",
+            "category": "Core",
+            "tracking_platforms": [
+                "Server"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "email",
+                    "definition": "input value for email",
+                    "type": "String"
+                },
+                {
+                    "name": "fbc",
+                    "definition": "Facebook click ID",
+                    "type": "String"
+                },
+                {
+                    "name": "fbp",
+                    "definition": "input value for first name",
+                    "type": "String"
+                },
+                {
+                    "name": "first_name",
+                    "definition": "Google click ID",
+                    "type": "String"
+                },
+                {
+                    "name": "gclid",
+                    "definition": "input value for last name",
+                    "type": ""
+                },
+                {
+                    "name": "last_name",
+                    "definition": "input value for full name",
+                    "type": ""
+                },
+                {
+                    "name": "name",
+                    "definition": "",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Account Updated",
+            "description": "Triggered when user updates their account details",
+            "category": "Accounts/Sign Ins",
+            "tracking_platforms": [
+                "Web, Mobile"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "address_account",
+                    "definition": "address set in account",
+                    "type": "String"
+                },
+                {
+                    "name": "city_account",
+                    "definition": "city set in account",
+                    "type": "String"
+                },
+                {
+                    "name": "country_account",
+                    "definition": "country set in account",
+                    "type": "String"
+                },
+                {
+                    "name": "email_notifications",
+                    "definition": "Boolean for True if opted in",
+                    "type": "String"
+                },
+                {
+                    "name": "first_name",
+                    "definition": "input value for first name",
+                    "type": "String"
+                },
+                {
+                    "name": "last_name",
+                    "definition": "input value for last name",
+                    "type": "String"
+                },
+                {
+                    "name": "name",
+                    "definition": "input value for full name",
+                    "type": "String"
+                },
+                {
+                    "name": "newsletter_notifications",
+                    "definition": "Boolean for True if opted in",
+                    "type": ""
+                },
+                {
+                    "name": "phone_account",
+                    "definition": "phone set in account",
+                    "type": ""
+                },
+                {
+                    "name": "state_account",
+                    "definition": "state set in account",
+                    "type": ""
+                },
+                {
+                    "name": "zip_account",
+                    "definition": "zip set in account",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Account Updated - Server",
+            "description": "Triggered when user updates their account details",
+            "category": "Accounts/Sign Ins",
+            "tracking_platforms": [
+                "Server"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "address_account",
+                    "definition": "address set in account",
+                    "type": "String"
+                },
+                {
+                    "name": "city_account",
+                    "definition": "city set in account",
+                    "type": "String"
+                },
+                {
+                    "name": "country_account",
+                    "definition": "country set in account",
+                    "type": "String"
+                },
+                {
+                    "name": "email_notifications",
+                    "definition": "Boolean for True if opted in",
+                    "type": "String"
+                },
+                {
+                    "name": "first_name",
+                    "definition": "input value for first name",
+                    "type": "String"
+                },
+                {
+                    "name": "last_name",
+                    "definition": "input value for last name",
+                    "type": "String"
+                },
+                {
+                    "name": "name",
+                    "definition": "input value for full name",
+                    "type": "String"
+                },
+                {
+                    "name": "newsletter_notifications",
+                    "definition": "Boolean for True if opted in",
+                    "type": ""
+                },
+                {
+                    "name": "phone_account",
+                    "definition": "phone set in account",
+                    "type": ""
+                },
+                {
+                    "name": "state_account",
+                    "definition": "state set in account",
+                    "type": ""
+                },
+                {
+                    "name": "zip_account",
+                    "definition": "zip set in account",
+                    "type": ""
+                }
+            ]
+        },        
+        {
+            "event_name": "Application Installed",
+            "description": "Triggered automatically when a user FIRST LAUNCHES the mobile app",
+            "category": "Auto-Tracked",
+            "tracking_platforms": [
+                "Mobile"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "build",
+                    "definition": "the build number of the installed app",
+                    "type": ""
+                },
+                {
+                    "name": "version",
+                    "definition": "the version installed",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Application Opened",
+            "description": "Triggered when a user launches or foregrounds the app after the first open",
+            "category": "Auto-Tracked",
+            "tracking_platforms": [
+                "Mobile"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "build",
+                    "definition": "the build number of the installed app",
+                    "type": ""
+                },
+                {
+                    "name": "from_background",
+                    "definition": "If application transitioned from \u201cBackground\u201d to \u201cInactive\u201d state prior to foregrounding (as opposed to from \u201cNot Running\u201d state).",
+                    "type": ""
+                },
+                {
+                    "name": "referring_application",
+                    "definition": "The value of UIApplicationLaunchOptionsSourceApplicationKey from launchOptions. Automatically collected on iOS only.",
+                    "type": ""
+                },
+                {
+                    "name": "url",
+                    "definition": "The value of UIApplicationLaunchOptionsURLKey from launchOptions.Collected on iOS only.",
+                    "type": ""
+                },
+                {
+                    "name": "version",
+                    "definition": "the version installed",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Application Updated",
+            "description": "Triggered when a user when a user updates the app",
+            "category": "Auto-Tracked",
+            "tracking_platforms": [
+                "Mobile"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "build",
+                    "definition": "the build number of the installed app",
+                    "type": ""
+                },
+                {
+                    "name": "previous_build",
+                    "definition": "The previously recorded build.",
+                    "type": ""
+                },
+                {
+                    "name": "previous_version",
+                    "definition": "The previously recorded version.",
+                    "type": ""
+                },
+                {
+                    "name": "version",
+                    "definition": "the version installed",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Blog Category Viewed",
+            "description": "Triggered when a user views page listing blog posts from a particular category/topic",
+            "category": "Blog",
+            "tracking_platforms": [
+                "Web"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "blog_category",
+                    "definition": "category of blog topics one is viewing",
+                    "type": ""
+                },
+                {
+                    "name": "blog_subcategory",
+                    "definition": "subcategory of blog",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Blog Post Viewed",
+            "description": "Triggered when a user views a blog post",
+            "category": "Blog",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "blog_category",
+                    "definition": "category of blog topics one is viewing",
+                    "type": ""
+                },
+                {
+                    "name": "blog_post_author",
+                    "definition": "author of the blog post viewed",
+                    "type": ""
+                },
+                {
+                    "name": "blog_post_title",
+                    "definition": "title of the blog post viewed",
+                    "type": ""
+                },
+                {
+                    "name": "blog_subcategory",
+                    "definition": "subcategory of blog",
+                    "type": ""
+                },
+                {
+                    "name": "fbc",
+                    "definition": "Facebook click ID",
+                    "type": ""
+                },
+                {
+                    "name": "fbp",
+                    "definition": "Google click ID",
+                    "type": ""
+                },
+                {
+                    "name": "gclid",
+                    "definition": "url of the blog post viewed",
+                    "type": ""
+                },
+                {
+                    "name": "url",
+                    "definition": "",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Cart Viewed",
+            "description": "Triggered when a user views their cart",
+            "category": "Shopping",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "cart_id",
+                    "definition": "cart id, if applicable",
+                    "type": ""
+                },
+                {
+                    "name": "fbc",
+                    "definition": "Facebook click ID",
+                    "type": ""
+                },
+                {
+                    "name": "fbp",
+                    "definition": "Google click ID",
+                    "type": ""
+                },
+                {
+                    "name": "gclid",
+                    "definition": "Array value of products displayed in the product list",
+                    "type": ""
+                },
+                {
+                    "name": "products",
+                    "definition": "brand associated with the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.brand",
+                    "definition": "category the product belongs to",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.category",
+                    "definition": "coupon code associated with a product (e.g MAY DEALS 3)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.coupon",
+                    "definition": "image url of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.image_url",
+                    "definition": "name of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.name",
+                    "definition": "position in the product list (ex. 3)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.position",
+                    "definition": "price ($) of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.price",
+                    "definition": "database id of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.product_id",
+                    "definition": "quantity of a product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.quantity",
+                    "definition": "sku of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.sku",
+                    "definition": "URL of the product page",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.url",
+                    "definition": "variant of the product (e.g. Black)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.variant",
+                    "definition": "",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Checkout Started",
+            "description": "Triggered when a user initiated the order process (a transaction is created)",
+            "category": "Shopping",
+            "tracking_platforms": [
+                "Web, Mobile"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "affiliation",
+                    "definition": "store or affiliation from which this transaction occurred (e.g. Google Store)",
+                    "type": "String"
+                },
+                {
+                    "name": "coupon",
+                    "definition": "coupon code associated with a product (e.g MAY DEALS 3)",
+                    "type": ""
+                },
+                {
+                    "name": "currency",
+                    "definition": "currency of the transaction (USD)",
+                    "type": ""
+                },
+                {
+                    "name": "discount",
+                    "definition": "total discount associated with the transaction",
+                    "type": ""
+                },
+                {
+                    "name": "email",
+                    "definition": "input value for email",
+                    "type": ""
+                },
+                {
+                    "name": "fbc",
+                    "definition": "Facebook click ID",
+                    "type": ""
+                },
+                {
+                    "name": "fbp",
+                    "definition": "Google click ID",
+                    "type": ""
+                },
+                {
+                    "name": "gclid",
+                    "definition": "order/transaction id, must use of of these property names for ad platforms",
+                    "type": ""
+                },
+                {
+                    "name": "order_id",
+                    "definition": "Array value of products displayed in the product list",
+                    "type": ""
+                },
+                {
+                    "name": "products",
+                    "definition": "brand associated with the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.brand",
+                    "definition": "category the product belongs to",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.category",
+                    "definition": "coupon code associated with a product (e.g MAY DEALS 3)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.coupon",
+                    "definition": "image url of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.image_url",
+                    "definition": "name of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.name",
+                    "definition": "position in the product list (ex. 3)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.position",
+                    "definition": "price ($) of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.price",
+                    "definition": "database id of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.product_id",
+                    "definition": "quantity of a product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.quantity",
+                    "definition": "sku of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.sku",
+                    "definition": "URL of the product page",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.url",
+                    "definition": "variant of the product (e.g. Black)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.variant",
+                    "definition": "total value of product after quantity",
+                    "type": ""
+                },
+                {
+                    "name": "value",
+                    "definition": "",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Checkout Step Completed",
+            "description": "Triggered when a user completes a checkout step",
+            "category": "Shopping",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "address_billing",
+                    "definition": "address entered for billing",
+                    "type": ""
+                },
+                {
+                    "name": "address_shipping",
+                    "definition": "address entered for shipping",
+                    "type": ""
+                },
+                {
+                    "name": "checkout_id",
+                    "definition": "checkout id",
+                    "type": ""
+                },
+                {
+                    "name": "city_billing",
+                    "definition": "city entered for billing",
+                    "type": ""
+                },
+                {
+                    "name": "city_shipping",
+                    "definition": "city entered for shipping",
+                    "type": ""
+                },
+                {
+                    "name": "email_billing",
+                    "definition": "email entered for billing",
+                    "type": ""
+                },
+                {
+                    "name": "email_shipping",
+                    "definition": "email entered for shipping",
+                    "type": ""
+                },
+                {
+                    "name": "fbc",
+                    "definition": "Facebook click ID",
+                    "type": ""
+                },
+                {
+                    "name": "fbp",
+                    "definition": "first name entered for shipping",
+                    "type": ""
+                },
+                {
+                    "name": "first_name_shipping",
+                    "definition": "Google click ID",
+                    "type": ""
+                },
+                {
+                    "name": "gclid",
+                    "definition": "selection for \"How did you hear about us?\"",
+                    "type": ""
+                },
+                {
+                    "name": "how_you_heard",
+                    "definition": "last name entered for shipping",
+                    "type": ""
+                },
+                {
+                    "name": "last_name_shipping",
+                    "definition": "full name entered for billing",
+                    "type": ""
+                },
+                {
+                    "name": "name_billing",
+                    "definition": "phone entered for billing",
+                    "type": ""
+                },
+                {
+                    "name": "phone_billing",
+                    "definition": "phone entered for shipping",
+                    "type": ""
+                },
+                {
+                    "name": "phone_shipping",
+                    "definition": "Boolean True if yes is selected, False if not",
+                    "type": ""
+                },
+                {
+                    "name": "removal",
+                    "definition": "state entered for billing",
+                    "type": ""
+                },
+                {
+                    "name": "state_billing",
+                    "definition": "state entered for shipping",
+                    "type": ""
+                },
+                {
+                    "name": "state_shipping",
+                    "definition": "name of step",
+                    "type": ""
+                },
+                {
+                    "name": "step_name",
+                    "definition": "number representing a step in the checkout process",
+                    "type": ""
+                },
+                {
+                    "name": "step_number",
+                    "definition": "billing zip code",
+                    "type": ""
+                },
+                {
+                    "name": "zip_code_billing",
+                    "definition": "shipping zip code",
+                    "type": ""
+                },
+                {
+                    "name": "zip_code_shipping",
+                    "definition": "",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Checkout Step Viewed",
+            "description": "Triggered when a user views a checkout step",
+            "category": "Shopping",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": []
+        },
+        {
+            "event_name": "Coupon Applied",
+            "description": "Triggered when a user successfully enters a valid promo/coupon code",
+            "category": "Purchases",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "cart_id",
+                    "definition": "cart id, if applicable",
+                    "type": ""
+                },
+                {
+                    "name": "coupon",
+                    "definition": "coupon code associated with a product (e.g MAY DEALS 3)",
+                    "type": ""
+                },
+                {
+                    "name": "discount",
+                    "definition": "total discount associated with the transaction",
+                    "type": ""
+                },
+                {
+                    "name": "order_id",
+                    "definition": "order/transaction id, must use of of these property names for ad platforms",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Coupon Removed",
+            "description": "Triggered when a user removes a coupon from a cart or order",
+            "category": "Purchases",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "cart_id",
+                    "definition": "cart id, if applicable",
+                    "type": ""
+                },
+                {
+                    "name": "coupon",
+                    "definition": "coupon code associated with a product (e.g MAY DEALS 3)",
+                    "type": ""
+                },
+                {
+                    "name": "discount",
+                    "definition": "total discount associated with the transaction",
+                    "type": ""
+                },
+                {
+                    "name": "order_id",
+                    "definition": "order/transaction id, must use of of these property names for ad platforms",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "CTA Clicked",
+            "description": "Triggered when a user clicks a CTA button on a page",
+            "category": "Core",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "destination",
+                    "definition": "generally a URL destination of clicking the link",
+                    "type": "String"
+                },
+                {
+                    "name": "location",
+                    "definition": "if possible, the location of the button (e.g. module name)",
+                    "type": "String"
+                },
+                {
+                    "name": "text",
+                    "definition": "the text/name of the CTA",
+                    "type": "String"
+                },
+                {
+                    "name": "type",
+                    "definition": "the type of CTA {button, interstitial, banner}",
+                    "type": "String"
+                },
+                {
+                    "name": "url",
+                    "definition": "full URL of the page",
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "event_name": "Deep Link Clicked",
+            "description": "Triggered provided by deep link providers or an internal redirect service if you use one in order to provide a waypoint funnel step between your content or advertisement and the resulting app open. This event may be automatically collected by the iOS library if you opt in.",
+            "category": "Auto-Tracked",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "provider",
+                    "definition": "The deep link or attribution provider.",
+                    "type": ""
+                },
+                {
+                    "name": "url",
+                    "definition": "The App URL opened or clicked",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Deep Link Opened",
+            "description": "Triggered when your application is opened via a referring link, Segment or your packaged deep link partner will fire this event on your behalf.",
+            "category": "Auto-Tracked",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "provider",
+                    "definition": "The deep link or attribution provider.",
+                    "type": ""
+                },
+                {
+                    "name": "url",
+                    "definition": "The App URL opened or clicked",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Email Bounced",
+            "description": "Triggered when client's email tool receives notice from an email server that an email is undeliverable",
+            "category": "Email",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "campaign_id",
+                    "definition": "an id used to identify a campaign",
+                    "type": ""
+                },
+                {
+                    "name": "campaign_name",
+                    "definition": "a name used to identify a campaign",
+                    "type": ""
+                },
+                {
+                    "name": "email_id",
+                    "definition": "an ID used to identify the email.",
+                    "type": ""
+                },
+                {
+                    "name": "email_subject",
+                    "definition": "the email\u2019s subject line.",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Email Delivered",
+            "description": "Triggered when client's email tool gets notice that the receiving mail server confirmed receipt of an email",
+            "category": "Email",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "campaign_id",
+                    "definition": "an id used to identify a campaign",
+                    "type": ""
+                },
+                {
+                    "name": "campaign_name",
+                    "definition": "a name used to identify a campaign",
+                    "type": ""
+                },
+                {
+                    "name": "email_id",
+                    "definition": "an ID used to identify the email.",
+                    "type": ""
+                },
+                {
+                    "name": "email_subject",
+                    "definition": "the email\u2019s subject line.",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Email Link Clicked",
+            "description": "Triggered when Segment listener receives notice from client's email tool server that an email recipient clicked on a link in an email\u2019s body",
+            "category": "Email",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "campaign_id",
+                    "definition": "an id used to identify a campaign",
+                    "type": ""
+                },
+                {
+                    "name": "campaign_name",
+                    "definition": "a name used to identify a campaign",
+                    "type": ""
+                },
+                {
+                    "name": "email_id",
+                    "definition": "an ID used to identify the email.",
+                    "type": ""
+                },
+                {
+                    "name": "email_subject",
+                    "definition": "the email\u2019s subject line.",
+                    "type": ""
+                },
+                {
+                    "name": "link_id",
+                    "definition": "an id used to identify a link",
+                    "type": ""
+                },
+                {
+                    "name": "link_url",
+                    "definition": "the URL the link points to",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Email Opened",
+            "description": "Triggered when Segment listener receives notice from client's email tool server that an email recipient opened an email",
+            "category": "Email",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "campaign_id",
+                    "definition": "an id used to identify a campaign",
+                    "type": ""
+                },
+                {
+                    "name": "campaign_name",
+                    "definition": "a name used to identify a campaign",
+                    "type": ""
+                },
+                {
+                    "name": "email_id",
+                    "definition": "an ID used to identify the email.",
+                    "type": ""
+                },
+                {
+                    "name": "email_subject",
+                    "definition": "the email\u2019s subject line.",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Emailed Marked as Spam",
+            "description": "Triggered when the client's email tool receives noticed from the email server that a recipient has marked an email as spam",
+            "category": "Email",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "campaign_id",
+                    "definition": "an id used to identify a campaign",
+                    "type": ""
+                },
+                {
+                    "name": "campaign_name",
+                    "definition": "a name used to identify a campaign",
+                    "type": ""
+                },
+                {
+                    "name": "email_id",
+                    "definition": "an ID used to identify the email.",
+                    "type": ""
+                },
+                {
+                    "name": "email_subject",
+                    "definition": "the email\u2019s subject line.",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Experiment Viewed",
+            "description": "Triggered by an Segment listener via the Optimizely or VWO destination that indicate a user has viewed an experiment",
+            "category": "A/B Testing",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "experiment_id",
+                    "definition": "unique experiment ID",
+                    "type": ""
+                },
+                {
+                    "name": "experiment_name",
+                    "definition": "descriptive experiment name- ideally includes date ranges",
+                    "type": ""
+                },
+                {
+                    "name": "variation_id",
+                    "definition": "unique variant id",
+                    "type": ""
+                },
+                {
+                    "name": "variation_name",
+                    "definition": "variant name",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Install Attributed",
+            "description": "Triggered when Segment or an integrated partner can discern the source of an install",
+            "category": "Auto-Tracked",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "campaign[ad_creative]",
+                    "definition": "The ad creative name.",
+                    "type": ""
+                },
+                {
+                    "name": "campaign[ad_group]",
+                    "definition": "The ad group name.",
+                    "type": ""
+                },
+                {
+                    "name": "campaign[content]",
+                    "definition": "The content of the campaign.",
+                    "type": ""
+                },
+                {
+                    "name": "campaign[medium]",
+                    "definition": "Identifies what type of link was used.",
+                    "type": ""
+                },
+                {
+                    "name": "campaign[name]",
+                    "definition": "The name of the attributed campaign.",
+                    "type": ""
+                },
+                {
+                    "name": "campaign[source]",
+                    "definition": "Campaign source \u2014 attributed ad network",
+                    "type": ""
+                },
+                {
+                    "name": "provider",
+                    "definition": "The deep link or attribution provider.",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Lead Form Completed",
+            "description": "Triggered when a user successfully submits an lead form fill",
+            "category": "Core",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "email",
+                    "definition": "input value for email",
+                    "type": "String"
+                },
+                {
+                    "name": "fbc",
+                    "definition": "Facebook click ID",
+                    "type": "String"
+                },
+                {
+                    "name": "fbp",
+                    "definition": "Google click ID",
+                    "type": ""
+                },
+                {
+                    "name": "gclid",
+                    "definition": "full URL of the page",
+                    "type": ""
+                },
+                {
+                    "name": "url",
+                    "definition": "",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Order Cancelled",
+            "description": "Triggered when a user's order is cancelled",
+            "category": "Purchases",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "affiliation",
+                    "definition": "store or affiliation from which this transaction occurred (e.g. Google Store)",
+                    "type": ""
+                },
+                {
+                    "name": "currency",
+                    "definition": "currency of the transaction (USD)",
+                    "type": ""
+                },
+                {
+                    "name": "discount",
+                    "definition": "total discount associated with the transaction",
+                    "type": ""
+                },
+                {
+                    "name": "order_id",
+                    "definition": "order/transaction id, must use of of these property names for ad platforms",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.brand",
+                    "definition": "brand associated with the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.category",
+                    "definition": "category the product belongs to",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.coupon",
+                    "definition": "coupon code associated with a product (e.g MAY DEALS 3)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.image_url",
+                    "definition": "image url of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.name",
+                    "definition": "name of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.position",
+                    "definition": "position in the product list (ex. 3)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.price",
+                    "definition": "price ($) of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.product_id",
+                    "definition": "database id of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.quantity",
+                    "definition": "quantity of a product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.sku",
+                    "definition": "sku of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.url",
+                    "definition": "URL of the product page",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.variant",
+                    "definition": "variant of the product (e.g. Black)",
+                    "type": ""
+                },
+                {
+                    "name": "shipping",
+                    "definition": "shipping cost associated with the transaction",
+                    "type": ""
+                },
+                {
+                    "name": "tax",
+                    "definition": "total tax associated with the transaction",
+                    "type": ""
+                },
+                {
+                    "name": "total",
+                    "definition": "revenue ($) with discounts and coupons added in. For better flexibility and total control over tracking, we let you decide how to calculate how coupons and discounts are applied",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Order Completed",
+            "description": "Triggered when a user successfully completes a transaction and the payment gateway returns a success call validating that the payment went through",
+            "category": "Purchases",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "affiliation",
+                    "definition": "store or affiliation from which this transaction occurred (e.g. Google Store)",
+                    "type": "String"
+                },
+                {
+                    "name": "checkout_id",
+                    "definition": "checkout id",
+                    "type": ""
+                },
+                {
+                    "name": "coupon",
+                    "definition": "coupon code associated with a product (e.g MAY DEALS 3)",
+                    "type": ""
+                },
+                {
+                    "name": "currency",
+                    "definition": "currency of the transaction (USD)",
+                    "type": ""
+                },
+                {
+                    "name": "discount",
+                    "definition": "total discount associated with the transaction",
+                    "type": ""
+                },
+                {
+                    "name": "email",
+                    "definition": "input value for email",
+                    "type": ""
+                },
+                {
+                    "name": "fbc",
+                    "definition": "Facebook click ID",
+                    "type": ""
+                },
+                {
+                    "name": "fbp",
+                    "definition": "Google click ID",
+                    "type": ""
+                },
+                {
+                    "name": "gclid",
+                    "definition": "order/transaction id, must use of of these property names for ad platforms",
+                    "type": ""
+                },
+                {
+                    "name": "order_id",
+                    "definition": "string representing the payment method chosen",
+                    "type": ""
+                },
+                {
+                    "name": "payment_method",
+                    "definition": "brand associated with the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.brand",
+                    "definition": "category the product belongs to",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.category",
+                    "definition": "coupon code associated with a product (e.g MAY DEALS 3)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.coupon",
+                    "definition": "image url of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.image_url",
+                    "definition": "name of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.name",
+                    "definition": "position in the product list (ex. 3)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.position",
+                    "definition": "price ($) of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.price",
+                    "definition": "database id of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.product_id",
+                    "definition": "quantity of a product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.quantity",
+                    "definition": "sku of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.sku",
+                    "definition": "URL of the product page",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.url",
+                    "definition": "variant of the product (e.g. Black)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.variant",
+                    "definition": "revenue ($) associated with the transaction (excluding shipping and tax)",
+                    "type": ""
+                },
+                {
+                    "name": "revenue",
+                    "definition": "revenue ($) associated with the transaction (excluding shipping and tax)",
+                    "type": ""
+                },
+                {
+                    "name": "revenue_client",
+                    "definition": "shipping cost associated with the transaction",
+                    "type": ""
+                },
+                {
+                    "name": "shipping",
+                    "definition": "string representing the shipping method chosen",
+                    "type": ""
+                },
+                {
+                    "name": "shipping_method",
+                    "definition": "order total after discounts but before taxes and shipping",
+                    "type": ""
+                },
+                {
+                    "name": "subtotal",
+                    "definition": "total tax associated with the transaction",
+                    "type": ""
+                },
+                {
+                    "name": "tax",
+                    "definition": "revenue ($) with discounts and coupons added in. For better flexibility and total control over tracking, we let you decide how to calculate how coupons and discounts are applied",
+                    "type": ""
+                },
+                {
+                    "name": "total",
+                    "definition": "",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Order Refunded",
+            "description": "Triggered when a user's transaction is successfully refunded",
+            "category": "Purchases",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "checkout_id",
+                    "definition": "checkout id",
+                    "type": ""
+                },
+                {
+                    "name": "coupon",
+                    "definition": "coupon code associated with a product (e.g MAY DEALS 3)",
+                    "type": ""
+                },
+                {
+                    "name": "currency",
+                    "definition": "currency of the transaction (USD)",
+                    "type": ""
+                },
+                {
+                    "name": "discount",
+                    "definition": "total discount associated with the transaction",
+                    "type": ""
+                },
+                {
+                    "name": "order_id",
+                    "definition": "order/transaction id, must use of of these property names for ad platforms",
+                    "type": ""
+                },
+                {
+                    "name": "revenue",
+                    "definition": "revenue ($) associated with the transaction (excluding shipping and tax)",
+                    "type": ""
+                },
+                {
+                    "name": "revenue_client",
+                    "definition": "revenue ($) associated with the transaction (excluding shipping and tax)",
+                    "type": ""
+                },
+                {
+                    "name": "total",
+                    "definition": "revenue ($) with discounts and coupons added in. For better flexibility and total control over tracking, we let you decide how to calculate how coupons and discounts are applied",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Order Updated",
+            "description": "Triggered when a user updates their order",
+            "category": "Purchases",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "discount",
+                    "definition": "total discount associated with the transaction",
+                    "type": ""
+                },
+                {
+                    "name": "order_id",
+                    "definition": "order/transaction id, must use of of these property names for ad platforms",
+                    "type": ""
+                },
+                {
+                    "name": "total",
+                    "definition": "revenue ($) with discounts and coupons added in. For better flexibility and total control over tracking, we let you decide how to calculate how coupons and discounts are applied",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Page Viewed",
+            "description": "Triggered when a user loads a page",
+            "category": "Core",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "path",
+                    "definition": "path portion of the URL of the page (equivalent to canonical path which defaults to location.pathname from the DOM API) (autocaptured)",
+                    "type": "String"
+                },
+                {
+                    "name": "referrer",
+                    "definition": "full URL of the previous page (equivalent to document.referrer from the DOM API) (autocaptured as previous page)",
+                    "type": "String"
+                },
+                {
+                    "name": "search",
+                    "definition": "query string portion of the URL of the page (equivalent to location.search from the DOM API)",
+                    "type": "String"
+                },
+                {
+                    "name": "title",
+                    "definition": "title of the page (equivalent to document.title from the DOM API)",
+                    "type": "String"
+                },
+                {
+                    "name": "url",
+                    "definition": "full URL of the page",
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "event_name": "Payment Failed",
+            "description": "Triggered on behalf of a user when their payment attempt is declined by the payment gateway",
+            "category": "Purchases",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "plan_billing_amount",
+                    "definition": "The recurring billing amount for the subscription plan",
+                    "type": ""
+                },
+                {
+                    "name": "plan_code",
+                    "definition": "If there is a code for the subscription, the value for that code",
+                    "type": ""
+                },
+                {
+                    "name": "plan_name",
+                    "definition": "A property communicating the plan name/type in the payment processor",
+                    "type": ""
+                },
+                {
+                    "name": "plan_status",
+                    "definition": "The state of the plan (e.g. active, past due, cancelled, etc.)",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Payment Info Entered",
+            "description": "Triggered when a user completes their customer billing info in the checkout process",
+            "category": "Purchases",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "affiliation",
+                    "definition": "store or affiliation from which this transaction occurred (e.g. Google Store)",
+                    "type": ""
+                },
+                {
+                    "name": "order_id",
+                    "definition": "order/transaction id, must use of of these property names for ad platforms",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Product Added",
+            "description": "Triggered when a user adds a product to their shopping cart",
+            "category": "Shopping",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "brand",
+                    "definition": "brand associated with the product",
+                    "type": ""
+                },
+                {
+                    "name": "cart_id",
+                    "definition": "cart id, if applicable",
+                    "type": ""
+                },
+                {
+                    "name": "category",
+                    "definition": "category the product belongs to",
+                    "type": ""
+                },
+                {
+                    "name": "currency",
+                    "definition": "currency of the transaction (USD)",
+                    "type": ""
+                },
+                {
+                    "name": "fbc",
+                    "definition": "Facebook click ID",
+                    "type": ""
+                },
+                {
+                    "name": "fbp",
+                    "definition": "Google click ID",
+                    "type": ""
+                },
+                {
+                    "name": "gclid",
+                    "definition": "image url of the product",
+                    "type": ""
+                },
+                {
+                    "name": "image_url",
+                    "definition": "Boolean for if product added is from its own page or added along with another product",
+                    "type": ""
+                },
+                {
+                    "name": "is_add_on",
+                    "definition": "name of the product",
+                    "type": ""
+                },
+                {
+                    "name": "name",
+                    "definition": "verbiage for offer on product (e.g. Save $x)",
+                    "type": ""
+                },
+                {
+                    "name": "offer",
+                    "definition": "position in the product list (ex. 3)",
+                    "type": ""
+                },
+                {
+                    "name": "position",
+                    "definition": "price ($) of the product",
+                    "type": ""
+                },
+                {
+                    "name": "price",
+                    "definition": "database id of the product",
+                    "type": ""
+                },
+                {
+                    "name": "product_id",
+                    "definition": "quantity of a product",
+                    "type": ""
+                },
+                {
+                    "name": "quantity",
+                    "definition": "size of the product (e.g. King, Queen)",
+                    "type": ""
+                },
+                {
+                    "name": "size",
+                    "definition": "sku of the product",
+                    "type": ""
+                },
+                {
+                    "name": "sku",
+                    "definition": "URL of the product page",
+                    "type": ""
+                },
+                {
+                    "name": "url",
+                    "definition": "total value of product after quantity",
+                    "type": ""
+                },
+                {
+                    "name": "value",
+                    "definition": "variant of the product (e.g. Black)",
+                    "type": ""
+                },
+                {
+                    "name": "variant",
+                    "definition": "wishlist id to which the product was added to",
+                    "type": ""
+                },
+                {
+                    "name": "wishlist_id",
+                    "definition": "wishlist name to which the product was added to",
+                    "type": ""
+                },
+                {
+                    "name": "wishlist_name",
+                    "definition": "",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Product Added to Wishlist",
+            "description": "Triggered when user adds a product to their wishlist",
+            "category": "Shopping",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "brand",
+                    "definition": "brand associated with the product",
+                    "type": ""
+                },
+                {
+                    "name": "category",
+                    "definition": "category the product belongs to",
+                    "type": ""
+                },
+                {
+                    "name": "image_url",
+                    "definition": "image url of the product",
+                    "type": ""
+                },
+                {
+                    "name": "name",
+                    "definition": "name of the product",
+                    "type": ""
+                },
+                {
+                    "name": "position",
+                    "definition": "position in the product list (ex. 3)",
+                    "type": ""
+                },
+                {
+                    "name": "price",
+                    "definition": "price ($) of the product",
+                    "type": ""
+                },
+                {
+                    "name": "quantity",
+                    "definition": "quantity of a product",
+                    "type": ""
+                },
+                {
+                    "name": "size",
+                    "definition": "size of the product (e.g. King, Queen)",
+                    "type": ""
+                },
+                {
+                    "name": "sku",
+                    "definition": "sku of the product",
+                    "type": ""
+                },
+                {
+                    "name": "url",
+                    "definition": "URL of the product page",
+                    "type": ""
+                },
+                {
+                    "name": "variant",
+                    "definition": "variant of the product (e.g. Black)",
+                    "type": ""
+                },
+                {
+                    "name": "wishlist_id",
+                    "definition": "wishlist id to which the product was added to",
+                    "type": ""
+                },
+                {
+                    "name": "wishlist_name",
+                    "definition": "wishlist name to which the product was added to",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Product List Filtered",
+            "description": "Triggered when a user filters a product list or category",
+            "category": "Shopping",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "products.$.brand",
+                    "definition": "brand associated with the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.category",
+                    "definition": "category the product belongs to",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.coupon",
+                    "definition": "coupon code associated with a product (e.g MAY DEALS 3)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.image_url",
+                    "definition": "image url of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.name",
+                    "definition": "name of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.position",
+                    "definition": "position in the product list (ex. 3)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.price",
+                    "definition": "price ($) of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.product_id",
+                    "definition": "database id of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.quantity",
+                    "definition": "quantity of a product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.sku",
+                    "definition": "sku of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.url",
+                    "definition": "URL of the product page",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.variant",
+                    "definition": "variant of the product (e.g. Black)",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Product List Viewed",
+            "description": "Triggered when a user views a product list or category",
+            "category": "Shopping",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "list_id",
+                    "definition": "product list being viewed",
+                    "type": ""
+                },
+                {
+                    "name": "products",
+                    "definition": "Array value of products displayed in the product list",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.brand",
+                    "definition": "brand associated with the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.category",
+                    "definition": "category the product belongs to",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.coupon",
+                    "definition": "coupon code associated with a product (e.g MAY DEALS 3)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.image_url",
+                    "definition": "image url of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.name",
+                    "definition": "name of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.position",
+                    "definition": "position in the product list (ex. 3)",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.price",
+                    "definition": "price ($) of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.product_id",
+                    "definition": "database id of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.quantity",
+                    "definition": "quantity of a product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.sku",
+                    "definition": "sku of the product",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.url",
+                    "definition": "URL of the product page",
+                    "type": ""
+                },
+                {
+                    "name": "products.$.variant",
+                    "definition": "variant of the product (e.g. Black)",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Product Purchased",
+            "description": "Triggered when a user successfully purchases a product - please note if a user purchases multiple products, this event should fire for EACH product they purchase",
+            "category": "Purchases",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "brand",
+                    "definition": "brand associated with the product",
+                    "type": "String"
+                },
+                {
+                    "name": "category",
+                    "definition": "category the product belongs to",
+                    "type": ""
+                },
+                {
+                    "name": "coupon",
+                    "definition": "coupon code associated with a product (e.g MAY DEALS 3)",
+                    "type": ""
+                },
+                {
+                    "name": "currency",
+                    "definition": "currency of the transaction (USD)",
+                    "type": ""
+                },
+                {
+                    "name": "email",
+                    "definition": "input value for email",
+                    "type": ""
+                },
+                {
+                    "name": "fbc",
+                    "definition": "Facebook click ID",
+                    "type": ""
+                },
+                {
+                    "name": "fbp",
+                    "definition": "Google click ID",
+                    "type": ""
+                },
+                {
+                    "name": "gclid",
+                    "definition": "image url of the product",
+                    "type": ""
+                },
+                {
+                    "name": "image_url",
+                    "definition": "Boolean for if product added is from its own page or added along with another product",
+                    "type": ""
+                },
+                {
+                    "name": "is_add_on",
+                    "definition": "name of the product",
+                    "type": ""
+                },
+                {
+                    "name": "name",
+                    "definition": "verbiage for offer on product (e.g. Save $x)",
+                    "type": ""
+                },
+                {
+                    "name": "offer",
+                    "definition": "position in the product list (ex. 3)",
+                    "type": ""
+                },
+                {
+                    "name": "position",
+                    "definition": "price ($) of the product",
+                    "type": ""
+                },
+                {
+                    "name": "price",
+                    "definition": "database id of the product",
+                    "type": ""
+                },
+                {
+                    "name": "product_id",
+                    "definition": "quantity of a product",
+                    "type": ""
+                },
+                {
+                    "name": "quantity",
+                    "definition": "size of the product (e.g. King, Queen)",
+                    "type": ""
+                },
+                {
+                    "name": "size",
+                    "definition": "sku of the product",
+                    "type": ""
+                },
+                {
+                    "name": "sku",
+                    "definition": "URL of the product page",
+                    "type": ""
+                },
+                {
+                    "name": "url",
+                    "definition": "total value of product after quantity",
+                    "type": ""
+                },
+                {
+                    "name": "value",
+                    "definition": "variant of the product (e.g. Black)",
+                    "type": ""
+                },
+                {
+                    "name": "variant",
+                    "definition": "",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Product Removed",
+            "description": "Triggered when a user removes a product from their shopping cart",
+            "category": "Shopping",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "brand",
+                    "definition": "brand associated with the product",
+                    "type": ""
+                },
+                {
+                    "name": "category",
+                    "definition": "category the product belongs to",
+                    "type": ""
+                },
+                {
+                    "name": "coupon",
+                    "definition": "coupon code associated with a product (e.g MAY DEALS 3)",
+                    "type": ""
+                },
+                {
+                    "name": "currency",
+                    "definition": "currency of the transaction (USD)",
+                    "type": ""
+                },
+                {
+                    "name": "image_url",
+                    "definition": "image url of the product",
+                    "type": ""
+                },
+                {
+                    "name": "is_add_on",
+                    "definition": "Boolean for if product added is from its own page or added along with another product",
+                    "type": ""
+                },
+                {
+                    "name": "name",
+                    "definition": "name of the product",
+                    "type": ""
+                },
+                {
+                    "name": "position",
+                    "definition": "position in the product list (ex. 3)",
+                    "type": ""
+                },
+                {
+                    "name": "price",
+                    "definition": "price ($) of the product",
+                    "type": ""
+                },
+                {
+                    "name": "product_id",
+                    "definition": "database id of the product",
+                    "type": ""
+                },
+                {
+                    "name": "quantity",
+                    "definition": "quantity of a product",
+                    "type": ""
+                },
+                {
+                    "name": "size",
+                    "definition": "size of the product (e.g. King, Queen)",
+                    "type": ""
+                },
+                {
+                    "name": "sku",
+                    "definition": "sku of the product",
+                    "type": ""
+                },
+                {
+                    "name": "url",
+                    "definition": "URL of the product page",
+                    "type": ""
+                },
+                {
+                    "name": "value",
+                    "definition": "total value of product after quantity",
+                    "type": ""
+                },
+                {
+                    "name": "variant",
+                    "definition": "variant of the product (e.g. Black)",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Product Removed from Wishlist",
+            "description": "Triggered when user removes a product from their wishlist",
+            "category": "Shopping",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": []
+        },
+        {
+            "event_name": "Product Reviewed",
+            "description": "Triggered when a user reviews a product",
+            "category": "Shopping",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "order_id",
+                    "definition": "order/transaction id, must use of of these property names for ad platforms",
+                    "type": ""
+                },
+                {
+                    "name": "product_id",
+                    "definition": "database id of the product",
+                    "type": ""
+                },
+                {
+                    "name": "rating",
+                    "definition": "star rating",
+                    "type": ""
+                },
+                {
+                    "name": "review_body",
+                    "definition": "body of the review",
+                    "type": ""
+                },
+                {
+                    "name": "review_id",
+                    "definition": "unique id of review",
+                    "type": ""
+                },
+                {
+                    "name": "review_length",
+                    "definition": "length of review in characters",
+                    "type": ""
+                },
+                {
+                    "name": "review_title",
+                    "definition": "title of review",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Product Viewed",
+            "description": "Triggered when a user views a product",
+            "category": "Shopping",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "brand",
+                    "definition": "brand associated with the product",
+                    "type": ""
+                },
+                {
+                    "name": "category",
+                    "definition": "category the product belongs to",
+                    "type": ""
+                },
+                {
+                    "name": "coupon",
+                    "definition": "coupon code associated with a product (e.g MAY DEALS 3)",
+                    "type": ""
+                },
+                {
+                    "name": "currency",
+                    "definition": "currency of the transaction (USD)",
+                    "type": ""
+                },
+                {
+                    "name": "fbc",
+                    "definition": "Facebook click ID",
+                    "type": ""
+                },
+                {
+                    "name": "fbp",
+                    "definition": "Google click ID",
+                    "type": ""
+                },
+                {
+                    "name": "gclid",
+                    "definition": "image url of the product",
+                    "type": ""
+                },
+                {
+                    "name": "image_url",
+                    "definition": "name of the product",
+                    "type": ""
+                },
+                {
+                    "name": "name",
+                    "definition": "verbiage for offer on product (e.g. Save $x)",
+                    "type": ""
+                },
+                {
+                    "name": "offer",
+                    "definition": "position in the product list (ex. 3)",
+                    "type": ""
+                },
+                {
+                    "name": "position",
+                    "definition": "price ($) of the product",
+                    "type": ""
+                },
+                {
+                    "name": "price",
+                    "definition": "database id of the product",
+                    "type": ""
+                },
+                {
+                    "name": "product_id",
+                    "definition": "quantity of a product",
+                    "type": ""
+                },
+                {
+                    "name": "quantity",
+                    "definition": "sku of the product",
+                    "type": ""
+                },
+                {
+                    "name": "sku",
+                    "definition": "URL of the product page",
+                    "type": ""
+                },
+                {
+                    "name": "url",
+                    "definition": "",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Push Notification Bounced",
+            "description": "Triggered when a push notification from a provider bounces. If your push notification provider forwards push lifecycle events to Segment, they should include this event in their suite.",
+            "category": "Push Notifications",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": []
+        },
+        {
+            "event_name": "Push Notification Received",
+            "description": "Triggered when a user a push notification is received by your mobile app. This event may be automatically collected by the iOS library if you opt in.",
+            "category": "Push Notifications",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": []
+        },
+        {
+            "event_name": "Push Notification Tapped",
+            "description": "Triggered when when a user taps on a push notification associated with your app. This event may be automatically collected by the iOS library if you opt in.",
+            "category": "Push Notifications",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": []
+        },
+        {
+            "event_name": "Screen Viewed",
+            "description": "Auto-triggered by the Segment snippet when a user sees a screen. Alternatively, may be called as a Track event to normalize screen names across platforms",
+            "category": "Core",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": []
+        },
+        {
+            "event_name": "Search Result Selected",
+            "description": "Triggered when a user clicks and is redirected to one of the search results from a search query",
+            "category": "Search",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "location",
+                    "definition": "indicates if the result was selected from autofill or the search results page",
+                    "type": ""
+                },
+                {
+                    "name": "position",
+                    "definition": "position in the search list (e.g 3)",
+                    "type": ""
+                },
+                {
+                    "name": "query",
+                    "definition": "the search query",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Signed In",
+            "description": "Triggered when a user logs into their account",
+            "category": "Accounts/Sign Ins",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "email",
+                    "definition": "input value for email",
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "event_name": "Signed Out",
+            "description": "Triggered when a user logs out of their account",
+            "category": "Accounts/Sign Ins",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "email",
+                    "definition": "input value for email",
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "event_name": "Site Searched",
+            "description": "Triggered when a user successfully submits a term into a search bar",
+            "category": "Search",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "query",
+                    "definition": "the search query",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Subscription Cancelled",
+            "description": "Triggered when a user successfully cancels their subscription",
+            "category": "Subscriptions",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "plan_billing_amount",
+                    "definition": "The recurring billing amount for the subscription plan",
+                    "type": ""
+                },
+                {
+                    "name": "plan_code",
+                    "definition": "If there is a code for the subscription, the value for that code",
+                    "type": ""
+                },
+                {
+                    "name": "plan_name",
+                    "definition": "A property communicating the plan name/type in the payment processor",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Subscription Downgraded",
+            "description": "Triggered when a user downgrade their subscription account",
+            "category": "Subscriptions",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "new_plan_billing_amount",
+                    "definition": "The recurring billing amount for the subscription plan after the change was made",
+                    "type": ""
+                },
+                {
+                    "name": "new_plan_code",
+                    "definition": "If there is a code for the subscription, the value for that code after the change was made",
+                    "type": ""
+                },
+                {
+                    "name": "new_plan_name",
+                    "definition": "A property communicating the plan name/type in the payment processor after the change was made",
+                    "type": ""
+                },
+                {
+                    "name": "original_plan_billing_amount",
+                    "definition": "The recurring billing amount for the subscription plan before the change was made",
+                    "type": ""
+                },
+                {
+                    "name": "original_plan_code",
+                    "definition": "If there is a code for the subscription, the value for that code before the change was made",
+                    "type": ""
+                },
+                {
+                    "name": "original_plan_name",
+                    "definition": "A property communicating the plan name/type in the payment processor before the change was made",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Subscription Paid",
+            "description": "Triggered on the success call from the payment processor each time a user's credit card is charged for their subscription fees.  This includes firing along side the Subscription Started event.",
+            "category": "Subscriptions",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "email",
+                    "definition": "input value for email",
+                    "type": "String"
+                },
+                {
+                    "name": "fbc",
+                    "definition": "Facebook click ID",
+                    "type": ""
+                },
+                {
+                    "name": "fbp",
+                    "definition": "Google click ID",
+                    "type": ""
+                },
+                {
+                    "name": "gclid",
+                    "definition": "The recurring billing amount for the subscription plan",
+                    "type": ""
+                },
+                {
+                    "name": "plan_billing_amount",
+                    "definition": "If there is a code for the subscription, the value for that code",
+                    "type": ""
+                },
+                {
+                    "name": "plan_code",
+                    "definition": "A property communicating the plan name/type in the payment processor",
+                    "type": ""
+                },
+                {
+                    "name": "plan_name",
+                    "definition": "revenue ($) associated with the transaction (excluding shipping and tax)",
+                    "type": ""
+                },
+                {
+                    "name": "revenue",
+                    "definition": "revenue ($) associated with the transaction (excluding shipping and tax)",
+                    "type": ""
+                },
+                {
+                    "name": "revenue_client",
+                    "definition": "",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Subscription Reactivated",
+            "description": "Triggered when a user successfully reactives a subscription (e.g. a lapsed user renews their subscription or a cancelled account is reinstated)",
+            "category": "Subscriptions",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "email",
+                    "definition": "input value for email",
+                    "type": "String"
+                },
+                {
+                    "name": "plan_billing_amount",
+                    "definition": "The recurring billing amount for the subscription plan",
+                    "type": ""
+                },
+                {
+                    "name": "plan_code",
+                    "definition": "If there is a code for the subscription, the value for that code",
+                    "type": ""
+                },
+                {
+                    "name": "plan_name",
+                    "definition": "A property communicating the plan name/type in the payment processor",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Subscription Renewed",
+            "description": "Triggered when a user renews their subscription account",
+            "category": "Subscriptions",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "plan_billing_amount",
+                    "definition": "The recurring billing amount for the subscription plan",
+                    "type": ""
+                },
+                {
+                    "name": "plan_code",
+                    "definition": "If there is a code for the subscription, the value for that code",
+                    "type": ""
+                },
+                {
+                    "name": "plan_name",
+                    "definition": "A property communicating the plan name/type in the payment processor",
+                    "type": ""
+                },
+                {
+                    "name": "renewal_date",
+                    "definition": "The date the subscription was renewed (in ISO-8601 date string)",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Subscription Started",
+            "description": "Triggered when a user successfully subscribes to a subscription plan (fires on SUCCESS of first payment).",
+            "category": "Subscriptions",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "email",
+                    "definition": "input value for email",
+                    "type": "String"
+                },
+                {
+                    "name": "fbc",
+                    "definition": "Facebook click ID",
+                    "type": ""
+                },
+                {
+                    "name": "fbp",
+                    "definition": "Google click ID",
+                    "type": ""
+                },
+                {
+                    "name": "gclid",
+                    "definition": "The recurring billing amount for the subscription plan",
+                    "type": ""
+                },
+                {
+                    "name": "plan_billing_amount",
+                    "definition": "If there is a code for the subscription, the value for that code",
+                    "type": ""
+                },
+                {
+                    "name": "plan_code",
+                    "definition": "A property communicating the plan name/type in the payment processor",
+                    "type": ""
+                },
+                {
+                    "name": "plan_name",
+                    "definition": "The start date of the plan (in ISO-8601 date string)",
+                    "type": ""
+                },
+                {
+                    "name": "plan_start_date",
+                    "definition": "",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Subscription Upgraded",
+            "description": "Triggered when a user upgrades their subscription account",
+            "category": "Subscriptions",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "new_plan_billing_amount",
+                    "definition": "The recurring billing amount for the subscription plan after the change was made",
+                    "type": ""
+                },
+                {
+                    "name": "new_plan_code",
+                    "definition": "If there is a code for the subscription, the value for that code after the change was made",
+                    "type": ""
+                },
+                {
+                    "name": "new_plan_name",
+                    "definition": "A property communicating the plan name/type in the payment processor after the change was made",
+                    "type": ""
+                },
+                {
+                    "name": "original_plan_billing_amount",
+                    "definition": "The recurring billing amount for the subscription plan before the change was made",
+                    "type": ""
+                },
+                {
+                    "name": "original_plan_code",
+                    "definition": "If there is a code for the subscription, the value for that code before the change was made",
+                    "type": ""
+                },
+                {
+                    "name": "original_plan_name",
+                    "definition": "A property communicating the plan name/type in the payment processor before the change was made",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Trial Started",
+            "description": "Triggered when a user successfully signs up for a trial",
+            "category": "Trials",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": [
+                {
+                    "name": "email",
+                    "definition": "input value for email",
+                    "type": "String"
+                },
+                {
+                    "name": "fbc",
+                    "definition": "Facebook click ID",
+                    "type": ""
+                },
+                {
+                    "name": "fbp",
+                    "definition": "Google click ID",
+                    "type": ""
+                },
+                {
+                    "name": "gclid",
+                    "definition": "The trial expiration date (in ISO-8601 date string)",
+                    "type": ""
+                },
+                {
+                    "name": "trial_expiration_date",
+                    "definition": "If there is a code for the plan, the value for that code",
+                    "type": ""
+                },
+                {
+                    "name": "trial_plan_code",
+                    "definition": "The name of the trial one has signed up for",
+                    "type": ""
+                },
+                {
+                    "name": "trial_plan_name",
+                    "definition": "The start of the trial (in ISO-8601 date string)",
+                    "type": ""
+                },
+                {
+                    "name": "trial_start_date",
+                    "definition": "",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Trial Expired",
+            "description": "Triggered when a user's trial period expires",
+            "category": "Trials",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": true,
+            "properties": []
+        },
+        {
+            "event_name": "Unsubscribed",
+            "description": "Triggered when the client's email tool receives noticed that the recipient has unsubscribed from the email. The unsubscription can either happen for a particular list, or globally from all marketing emails, depending on the tool. Typically you cannot unsubscribe from a transactional email such as a password reset",
+            "category": "Email",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "campaign_id",
+                    "definition": "an id used to identify a campaign",
+                    "type": ""
+                },
+                {
+                    "name": "campaign_name",
+                    "definition": "a name used to identify a campaign",
+                    "type": ""
+                },
+                {
+                    "name": "email_id",
+                    "definition": "an ID used to identify the email.",
+                    "type": ""
+                },
+                {
+                    "name": "email_subject",
+                    "definition": "the email\u2019s subject line.",
+                    "type": ""
+                },
+                {
+                    "name": "list_id",
+                    "definition": "an optional id used to identify a list",
+                    "type": ""
+                },
+                {
+                    "name": "list_name",
+                    "definition": "an optional name used to identify a list",
+                    "type": ""
+                }
+            ]
+        },
+        {
+            "event_name": "Video Completed",
+            "description": "Triggered when a video reaches 90% of the duration",
+            "category": "Video",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "duration",
+                    "definition": "duration of the video in seconds",
+                    "type": "Integer"
+                },
+                {
+                    "name": "video_category",
+                    "definition": "type of video",
+                    "type": "String"
+                },
+                {
+                    "name": "video_title",
+                    "definition": "name of the video",
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "event_name": "Video Started",
+            "description": "Triggered when a video starts playing",
+            "category": "Video",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": [
+                {
+                    "name": "duration",
+                    "definition": "duration of the video in seconds",
+                    "type": "Integer"
+                },
+                {
+                    "name": "video_category",
+                    "definition": "type of video",
+                    "type": "String"
+                },
+                {
+                    "name": "video_title",
+                    "definition": "name of the video",
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "event_name": "Button Clicked",
+            "description": "Not recommended for main taxonomy - option to implement if team insists on tracking more clicks than CTAs",
+            "category": "Optional",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": []
+        },
+        {
+            "event_name": "Navigation Button Clicked",
+            "description": "Not recommended for main taxonomy - option to implement if team insists on tracking more clicks than CTAs and Button Clicked.",
+            "category": "Optional",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": []
+        },
+        {
+            "event_name": "Navigation Button Clicked",
+            "description": "Not recommended for main taxonomy - option to implement if team insists on tracking more clicks than CTAs and Button Clicked.",
+            "category": "Optional",
+            "tracking_platforms": [
+                "nan"
+            ],
+            "identify_call_required": false,
+            "properties": []
+        }
+    ],
+         "conditional_properties": {
+            "B2B": [
+                {
+                    "name": "account_id",
+                    "definition": "Unique identifier for the business account",
+                    "type": "String"
+                },
+                {
+                    "name": "account_name",
+                    "definition": "The name of the account the user belongs to",
+                    "type": "String"
+                }
+                ]
+            }
+        }
